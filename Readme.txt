@@ -1,9 +1,15 @@
-Introduction to Game Development Tools -kurssin ryhmäprojekti
+**The Alchemist**
+
+Team Game Development Project
+Course: Introduction to Game Development Tools
 
 
-Tekijät: 
+Developers: 
 
 Joonas Syysvirta
 Marko Halonen
 Mikko Ruskamo
 Tarmo Riutta
+Li Chuang
+Liu Chang 
+He Xiaochuang
