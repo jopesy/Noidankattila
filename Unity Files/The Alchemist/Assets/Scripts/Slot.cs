@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// A script to be attached to the slots where ingredients can be dragged from/into
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// A script to be attached to ingredients, to make them draggable between slots (shelves and cauldron)
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 
@@ -6,6 +8,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
 	public static GameObject itemBeingDragged;
 	Vector3 startPosition;
+	//the starting slot (shelf slot)
 	Transform startParent;
 
 	#region IBeginDragHandler implementation
@@ -13,6 +16,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	public void OnBeginDrag (PointerEventData eventData)
 	{
 		itemBeingDragged = gameObject;
+		// enlarge object when beginning dragging
 		transform.localScale = new Vector3 (3, 3, 1);
 		startPosition = transform.position;
 		startParent = transform.parent;
@@ -34,11 +38,16 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
 	public void OnEndDrag (PointerEventData eventData)
 	{
+		// set the object's scale back to default
 		transform.localScale = new Vector3 (2, 2, 1);
 		itemBeingDragged = null;
-		GetComponent<CanvasGroup>().blocksRaycasts = true;
+		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 		if (transform.parent == startParent) {
 			transform.position = startPosition;
+		}
+		// if object is dropped into the cauldron
+		if (transform.parent.name == "CauldronSlot") {
+			DestroyObject (gameObject);
 		}
 	}
 

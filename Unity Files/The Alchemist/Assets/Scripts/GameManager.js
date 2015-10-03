@@ -1,4 +1,6 @@
-﻿#pragma strict
+﻿//Handles level music, level changes etc.
+
+#pragma strict
 
 var music : AudioSource;
 
