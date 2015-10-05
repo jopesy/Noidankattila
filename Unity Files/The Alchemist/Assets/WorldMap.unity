@@ -413,7 +413,7 @@ GameObject:
   - 222: {fileID: 887421038}
   - 114: {fileID: 887421037}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fb382b6176e7c604eb251cf4e61c8a0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e89f7cc949e4c47448e13de0abf5e04e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -466,8 +466,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -3.05175781e-05, y: -.000144962658}
-  m_SizeDelta: {x: 800, y: 500.920013}
+  m_AnchoredPosition: {x: -1.04904175e-05, y: -.000308990479}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &996586725
 GameObject:
@@ -502,7 +502,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 335, y: -160.899994}
+  m_AnchoredPosition: {x: 298, y: -130}
   m_SizeDelta: {x: 115.099998, y: 117.900002}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &996586727
@@ -708,7 +708,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -93.9000015, y: -113.800003}
+  m_AnchoredPosition: {x: -108, y: -104}
   m_SizeDelta: {x: 42, y: 41}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1556818085
@@ -897,7 +897,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -252.600006, y: 29.5}
+  m_AnchoredPosition: {x: -256, y: 20}
   m_SizeDelta: {x: 42, y: 41}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1916068786
