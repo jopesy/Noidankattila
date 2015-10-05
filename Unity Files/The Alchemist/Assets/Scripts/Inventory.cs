@@ -26,8 +26,7 @@ public class Inventory : MonoBehaviour {
 		}
 
 		// Check to see if player has Dragon's Blood in his inventory
-		bool hasIngredient = inventory.Exists(item => item.itemName == "Dragon's Blood");
-		if (hasIngredient) {
+		if (HasItem(0)) { // Dragon's Blood's ID in database is 0
 			print ("You have Dragon's Blood in your inventory!");
 		}
 	}
@@ -44,9 +43,14 @@ public class Inventory : MonoBehaviour {
 		}
 	}
 	// Adds an item to the inventory
-	public void AddItem(int newItemID){
+	void AddItem(int newItemID){
 		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>();
 		Item itemToAdd = database.items[newItemID];
 		inventory.Add(itemToAdd);
+	}
+
+	//Returns true if player has an item in inventory based on itemID
+	bool HasItem(int id){
+		return inventory.Exists (item => item.itemID == id);
 	}
 }
