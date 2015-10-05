@@ -8,7 +8,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
 	public static GameObject itemBeingDragged;
 	Vector3 startPosition;
-	//the starting slot (shelf slot)
+	// the starting slot (shelf slot)
 	Transform startParent;
 
 	#region IBeginDragHandler implementation
