@@ -42,15 +42,24 @@ public class Inventory : MonoBehaviour {
 			instance = this;
 		}
 	}
-	// Adds an item to the inventory
-	void AddItem(int newItemID){
+	// Adds an item to the inventory based on itemID
+	public void AddItem(int id){
 		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>();
-		Item itemToAdd = database.items[newItemID];
+		Item itemToAdd = database.items[id];
 		inventory.Add(itemToAdd);
 	}
 
+	// Removes an item from inventory based on itemID
+	public void RemoveItem(int id){
+		for (int i=0; i < inventory.Count; i++) {
+			if (inventory[i].itemID == id){
+				inventory.RemoveAt(i);
+				break;
+			}
+		}
+	}
 	//Returns true if player has an item in inventory based on itemID
-	bool HasItem(int id){
+	public bool HasItem(int id){
 		return inventory.Exists (item => item.itemID == id);
 	}
 }
