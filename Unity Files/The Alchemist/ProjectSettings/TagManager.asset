@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Item Database
   - Inventory
+  - Cauldron
   layers:
   - Default
   - TransparentFX
