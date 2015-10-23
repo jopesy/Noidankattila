@@ -50,7 +50,7 @@ public class Slot : MonoBehaviour, IDropHandler {
 	}
 	#endregion
 
-	// If slot has items in it, and currently has no child, create a new child (draggable ingredient)
+	// If slot has items in it's list, and currently has no child, create a new child (draggable ingredient)
 	void CreateIngredients(){
 		if((this.slotItems.Count > 0) && (this.transform.childCount == 0)){
 			GameObject ingredient = (GameObject)Instantiate(Resources.Load("Prefabs/"+ingredientPrefab.name));
