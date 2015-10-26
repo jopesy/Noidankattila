@@ -69,7 +69,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 			cauldron.potionIngredients.Add(item);
 			DestroyObject (gameObject);
 			inventory.RemoveItem(itemID); // remove dropped ingredient from inventory
-
+			startParent.GetComponent<Slot>().FillSlot ();
 		}
 	}
 

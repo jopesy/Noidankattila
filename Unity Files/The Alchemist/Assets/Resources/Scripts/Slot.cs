@@ -19,12 +19,19 @@ public class Slot : MonoBehaviour, IDropHandler {
 
 	// Called every time the player enters scene
 	void Start(){
+		FillSlot ();
+	}
+
+	// If player has ingredients in his inventory that match this slot's ID,
+	// add those ingredients into this slot
+	public void FillSlot(){
 		inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
-		// If player has ingredients in his inventory that match this slot's ID,
-		// add those ingredients into this slot
+		// Clear Slot
+		slotItems.Clear ();
+		// Iterate through inventory and add ingredients into this slot
 		for (int i = 0; i < inventory.inventory.Count; i++) {
 			if(inventory.inventory[i].itemID == slotItemID){
-				slotItems.Add(inventory.inventory[i]);
+				this.slotItems.Add(inventory.inventory[i]);
 			}
 		}
 		// Create those ingredients
