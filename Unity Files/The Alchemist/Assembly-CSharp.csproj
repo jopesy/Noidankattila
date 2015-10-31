@@ -68,10 +68,20 @@
      <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Resources\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <None Include="Assets\Resources\Models\Troll\Shader\Alpha_Texture.shader" />
+     <None Include="Assets\Resources\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Resources\Models\Troll\Shader\DoubleSided-Light-Spec.shader" />
+     <None Include="Assets\Micro Characters\Ghost\models\ghost_animations.txt" />
+     <None Include="Assets\Micro Characters\Demon\models\micro-demon-animation-list.txt" />
+     <None Include="Assets\Micro Characters\Werewolf\models\animation list.txt" />
      <None Include="Assets\Resources\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Resources\README.txt" />
+     <None Include="Assets\Micro Characters\Wizard\models\micro-wizard-animation-list.txt" />
      <None Include="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Micro Characters\Bat\models\micro-bat-animation-list.txt" />
+     <None Include="Assets\Micro Characters\Orc\models\orc_animation_list.txt" />
+     <None Include="Assets\Micro Characters\Troll\models\micro_troll_animation_list.txt" />
+     <None Include="Assets\Micro Characters\Skeleton\models\animation list.txt" />
+     <None Include="Assets\Resources\PowerUps Vol 1 Free\Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Ohjelmat/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

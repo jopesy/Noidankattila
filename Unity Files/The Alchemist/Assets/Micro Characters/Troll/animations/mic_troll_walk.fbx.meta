@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 0fbf73e010aff084eb94e693d4912a1e
+timeCreated: 1446311714
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: body_troll
+    100002: butt_troll
+    100004: ear_left
+    100006: ear_right
+    100008: eyebrow_l_troll
+    100010: eyebrow_r_troll
+    100012: face_troll
+    100014: fingers_01_left_troll
+    100016: fingers_01_right_troll
+    100018: fingers_02_left_troll
+    100020: fingers_02_right_troll
+    100022: fingers_03_left_troll
+    100024: fingers_03_right_troll
+    100026: hair_01
+    100028: hair_02
+    100030: hair_03
+    100032: head_troll
+    100034: jaw
+    100036: left_arm_troll
+    100038: left_hand_troll
+    100040: left_shoulder_troll
+    100042: //RootNode
+    100044: mouth_corner_left
+    100046: mouth_corner_right
+    100048: right_arm_troll
+    100050: right_hand_troll
+    100052: right_shoulder_troll
+    100054: root
+    100056: sideburn_left
+    100058: sideburn_right
+    100060: staff
+    100062: thumb_01_left_troll
+    100064: thumb_01_right_troll
+    100066: thumb_02_left_troll
+    100068: thumb_02_right_troll
+    400000: body_troll
+    400002: butt_troll
+    400004: ear_left
+    400006: ear_right
+    400008: eyebrow_l_troll
+    400010: eyebrow_r_troll
+    400012: face_troll
+    400014: fingers_01_left_troll
+    400016: fingers_01_right_troll
+    400018: fingers_02_left_troll
+    400020: fingers_02_right_troll
+    400022: fingers_03_left_troll
+    400024: fingers_03_right_troll
+    400026: hair_01
+    400028: hair_02
+    400030: hair_03
+    400032: head_troll
+    400034: jaw
+    400036: left_arm_troll
+    400038: left_hand_troll
+    400040: left_shoulder_troll
+    400042: //RootNode
+    400044: mouth_corner_left
+    400046: mouth_corner_right
+    400048: right_arm_troll
+    400050: right_hand_troll
+    400052: right_shoulder_troll
+    400054: root
+    400056: sideburn_left
+    400058: sideburn_right
+    400060: staff
+    400062: thumb_01_left_troll
+    400064: thumb_01_right_troll
+    400066: thumb_02_left_troll
+    400068: thumb_02_right_troll
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

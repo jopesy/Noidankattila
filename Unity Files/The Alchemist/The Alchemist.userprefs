@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\README.txt">
     <Files>
-      <File FileName="Assets\Resources\README.txt" Line="9" Column="47" />
+      <File FileName="Assets\Resources\README.txt" Line="15" Column="79" />
       <File FileName="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\AnimationController.cs" Line="1" Column="1" />
