@@ -431,6 +431,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 483916, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
       propertyPath: m_LocalPosition.x
       value: .259272844
@@ -461,6 +465,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483916, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[3].itemID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[4].itemID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[5].itemID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[2].itemID
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1315,7 +1335,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 857d125046ab7584fb31b8e830e3e698, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d2861a157e09a1f49ae74e09671787de, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class AnimationController : MonoBehaviour {
 
@@ -12,9 +13,17 @@ public class AnimationController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0){
-			anim.Play("Walk");
-		}
-		else anim.Play("Idle");
+
+		// These are for PC controls
+	//	if (Input.GetAxis ("Horizontal") > 0 || Input.GetAxis ("Horizontal") < 0) {
+	//		anim.Play ("Walk");
+	//	} else
+	//		anim.Play ("Idle");
+
+		// These are for mobile controls
+		if (CrossPlatformInputManager.GetAxis ("Horizontal") > 0 || CrossPlatformInputManager.GetAxis ("Horizontal") < 0) {
+			anim.Play ("Walk");
+		} else
+			anim.Play ("Idle");
 	}
 }

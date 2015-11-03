@@ -87,7 +87,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	void OnGUI(){
 		GUI.skin = skin;
 		if (showTooltip) {
-			GUI.Box (new Rect(Event.current.mousePosition.x-300, Event.current.mousePosition.y-100, 200, 200), tooltip, skin.GetStyle("box"));
+			GUI.Box (new Rect(Event.current.mousePosition.x-300, Event.current.mousePosition.y-100, 200, 200), tooltip, skin.GetStyle("Box"));
 		}
 	}
 }

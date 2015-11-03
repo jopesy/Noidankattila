@@ -5,6 +5,8 @@ public class IngredientPickup : MonoBehaviour {
 
 	public int itemID;
 	private Inventory inventory;
+	public Transform pickupSound;
+	private GameObject soundEffect;
 
 	void Start(){
 		inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
@@ -14,6 +16,8 @@ public class IngredientPickup : MonoBehaviour {
 			inventory.AddItem(this.itemID);
 			print("Item picked up!");
 			Destroy(gameObject);
+			soundEffect = Instantiate(pickupSound).gameObject;
+			Destroy(soundEffect, 2);
 		}
 	}
 }

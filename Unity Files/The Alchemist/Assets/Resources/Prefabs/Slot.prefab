@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a30eabe23dc7d49b7744c7ce41e3eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skin: {fileID: 0}
+  itemID: 0
 --- !u!114 &11485904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007d9fd5f2c2640418875280d1e69112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredientPrefab: {fileID: 0}
   slotItemID: 0
   slotItems: []
 --- !u!222 &22258888

@@ -94,6 +94,36 @@ MonoBehaviour:
     itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
+  - itemName: Golden Star
+    itemID: 9
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemValue: 0
+    itemType: 0
+  - itemName: Heart
+    itemID: 10
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemValue: 0
+    itemType: 0
+  - itemName: 
+    itemID: 0
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemValue: 0
+    itemType: 0
+  - itemName: 
+    itemID: 0
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemValue: 0
+    itemType: 0
+  - itemName: 
+    itemID: 0
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemValue: 0
+    itemType: 0
   - itemName: 
     itemID: 0
     itemDesc: 
@@ -107,6 +137,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: items.Array.size
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[2].itemName
       value: Violet
@@ -150,6 +184,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[0].itemDesc
       value: A very poisonous red mushroom.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[9].itemName
+      value: Golden Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[9].itemID
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[10].itemID
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[10].itemName
+      value: Heart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
