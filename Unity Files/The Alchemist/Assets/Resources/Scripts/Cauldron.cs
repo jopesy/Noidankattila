@@ -31,7 +31,7 @@ public class Cauldron : MonoBehaviour {
 	void MakePotion(){
 		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>();
 		inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
-		potion = database.items[3]; // Health potion
+		potion = database.items[3]; // Super jump potion
 		inventory.AddItem(potion.itemID);
 		this.potionIngredients.Clear();
 		soundEffect= Instantiate (potionCreatedSound).gameObject;
@@ -43,6 +43,9 @@ public class Cauldron : MonoBehaviour {
 	void OnGUI(){
 		if (potionCreated) {
 			GUI.Box (new Rect(Screen.width/4, Screen.height/4, Screen.width/2, Screen.height/2), "You have created a new potion!", skin.GetStyle("Window"));
+			if(GUI.Button(new Rect (Screen.width/2-Screen.width/16,Screen.height/2+Screen.width/10,Screen.width/8,Screen.width/24), "Got it!", skin.GetStyle("Button"))) {
+				potionCreated = false;
+			}
 		}
 	}
 }
