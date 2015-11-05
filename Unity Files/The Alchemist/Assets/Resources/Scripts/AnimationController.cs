@@ -20,10 +20,19 @@ public class AnimationController : MonoBehaviour {
 	//	} else
 	//		anim.Play ("Idle");
 
-		// These are for mobile controls
-		if (CrossPlatformInputManager.GetAxis ("Horizontal") > 0 || CrossPlatformInputManager.GetAxis ("Horizontal") < 0) {
-			anim.Play ("Walk");
-		} else
-			anim.Play ("Idle");
+	// THESE ARE FOR MOBILE CONTROLS
+		//If not currently drinking, either idle or walk
+		if (!anim.IsPlaying ("Drink") && !anim.IsPlaying ("Attack")) {
+			if (CrossPlatformInputManager.GetAxis ("Horizontal") > 0 || CrossPlatformInputManager.GetAxis ("Horizontal") < 0) {
+				anim.Play ("Walk");
+			} else
+				anim.Play("Idle");
+			}
+	}
+	public void Drink(){
+		anim.Play ("Drink");
+	}
+	public void Attack(){
+		anim.Play ("Attack");
 	}
 }

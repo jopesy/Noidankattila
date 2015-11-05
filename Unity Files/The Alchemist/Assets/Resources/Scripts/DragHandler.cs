@@ -17,6 +17,10 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	private Inventory inventory;
 	private Item item;
 
+	/** FOR SOUND EFFECT **/
+	public Transform ingredientDroppedSound;
+	private GameObject soundEffect;
+
 	/** FOR TOOLTIP **/
 	public GUISkin skin;
 	public int itemID;
@@ -70,6 +74,9 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 			DestroyObject (gameObject);
 			inventory.RemoveItem(itemID); // remove dropped ingredient from inventory
 			startParent.GetComponent<Slot>().FillSlot ();
+
+			soundEffect = Instantiate (ingredientDroppedSound).gameObject;
+			Destroy (soundEffect, 3);
 		}
 	}
 
@@ -87,7 +94,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	void OnGUI(){
 		GUI.skin = skin;
 		if (showTooltip) {
-			GUI.Box (new Rect(Event.current.mousePosition.x-300, Event.current.mousePosition.y-100, 200, 200), tooltip, skin.GetStyle("Box"));
+			GUI.Box (new Rect(Event.current.mousePosition.x-400, Event.current.mousePosition.y-150, 300, 300), tooltip, skin.GetStyle("Box"));
 		}
 	}
 }

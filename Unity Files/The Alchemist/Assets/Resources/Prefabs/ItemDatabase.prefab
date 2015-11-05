@@ -42,23 +42,23 @@ MonoBehaviour:
   items:
   - itemName: Red Mushroom
     itemID: 0
-    itemDesc: A very poisonous red mushroom.
+    itemDesc: A very poisonous red mushroom
     itemIcon: {fileID: 0}
     itemValue: 100
     itemType: 0
-  - itemName: Frog
+  - itemName: Green Mushroom
     itemID: 1
-    itemDesc: A very common green frog.
+    itemDesc: A very common green mushroom
     itemIcon: {fileID: 0}
     itemValue: 2
     itemType: 0
-  - itemName: Violet
+  - itemName: Blue Mushroom
     itemID: 2
-    itemDesc: A beautiful flower.
+    itemDesc: A pretty rare blue mushroom
     itemIcon: {fileID: 0}
     itemValue: 10
     itemType: 0
-  - itemName: Health Potion
+  - itemName: Super Jump Potion
     itemID: 3
     itemDesc: A potion that restores some health.
     itemIcon: {fileID: 0}
@@ -143,7 +143,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[2].itemName
-      value: Violet
+      value: Blue Mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[2].itemID
@@ -151,7 +151,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[2].itemDesc
-      value: A beautiful flower.
+      value: A pretty rare blue mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[2].itemValue
@@ -159,7 +159,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[3].itemName
-      value: Health Potion
+      value: Super Jump Potion
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[3].itemID
@@ -183,7 +183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[0].itemDesc
-      value: A very poisonous red mushroom.
+      value: A very poisonous red mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[9].itemName
@@ -200,6 +200,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[10].itemName
       value: Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].itemName
+      value: Green Mushroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].itemDesc
+      value: A very common green mushroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
