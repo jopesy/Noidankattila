@@ -25,7 +25,7 @@ public class Powerup : MonoBehaviour {
 			playerModel.GetComponent<AnimationController>().Drink();
 
 			// Set jumping power to 15
-			player.m_JumpPower = 15;
+			player.m_jumpPower = 15;
 
 			//remove used potion from inventory
 			if (inventory.HasItem(3)){

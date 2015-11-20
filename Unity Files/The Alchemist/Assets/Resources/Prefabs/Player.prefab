@@ -946,7 +946,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!95 &9527576
 Animator:
@@ -1028,7 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1ffb89dc77d1548859aab43f7c1ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
 --- !u!114 &11415868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1040,14 +1039,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 9
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: .200000003
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: .300000012
+  m_jumpPower: 12
+  airSpeed: 12
+  airControl: 10
+  gravityMultiplier: 2
+  moveSpeedMultiplier: 3
+  animSpeedMultiplier: 1
+  advancedSettings:
+    stationaryTurnSpeed: 180
+    movingTurnSpeed: 360
+    headLookResponseSpeed: 2
+    crouchHeightFactor: .600000024
+    crouchChangeSpeed: 4
+    autoTurnThresholdAngle: 100
+    autoTurnSpeed: 2
+    zeroFrictionMaterial: {fileID: 0}
+    highFrictionMaterial: {fileID: 0}
+    jumpRepeatDelayTime: .25
+    runCycleLegOffset: .200000003
+    groundStickyEffect: 5
+  groundCheckMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  crouchCheckMask:
+    serializedVersion: 2
+    m_Bits: 0
+  lookBlendTime: 0
+  lookWeight: 0
 --- !u!114 &11423376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1059,6 +1077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkByDefault: 1
+  lookInCameraDirection: 1
 --- !u!136 &13645822
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1147,6 +1167,30 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_JumpPower
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: airSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: airControl
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: moveSpeedMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: groundCheckMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: walkByDefault
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
