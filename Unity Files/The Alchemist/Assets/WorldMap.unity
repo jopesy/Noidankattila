@@ -495,35 +495,35 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalPosition.x
       value: .259272844
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalPosition.y
       value: 2.56896305
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalPosition.z
       value: -11.801095
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 477924, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+    - target: {fileID: 464092, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
@@ -674,7 +674,7 @@ RectTransform:
   m_GameObject: {fileID: 887421036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.00868189, z: 1}
   m_Children: []
   m_Father: {fileID: 1610770275}
   m_RootOrder: 0

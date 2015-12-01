@@ -9,6 +9,17 @@ TagManager:
   - Cauldron
   - PlayerModel
   - GameManager
+  - CanvasAlchemy
+  - HealthPotionCreated
+  - JumpPotionCreated
+  - PotionCreated
+  - ButtonClose
+  - UselessPotionCreated
+  - PotionBookHealthPotion
+  - PotionBookSuperJump
+  - ButtonPageLeft
+  - ButtonPageRight
+  - Effect
   layers:
   - Default
   - TransparentFX

@@ -67,8 +67,9 @@ ModelImporter:
     400056: robes_right_wizard
     400058: root
     400060: //RootNode
-    7400000: Take 001
+    7400000: BrewPotion
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +89,95 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BrewPotion
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/butt_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/brows_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/eye_l_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/eye_r_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hair_01_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hair_01_wizard/hair_02_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hair_01_wizard/hair_02_wizard/hair_03_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hair_01_wizard/hair_02_wizard/hair_03_wizard/hair_04_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hat_01_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hat_01_wizard/hat_02_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/head_wizard/hat_01_wizard/hat_02_wizard/hat_03_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/left_shoulder_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/left_shoulder_wizard/left_arm_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/left_shoulder_wizard/left_arm_wizard/left_hand_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/left_shoulder_wizard/left_arm_wizard/left_hand_wizard/left_finger_01_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/left_shoulder_wizard/left_arm_wizard/left_hand_wizard/left_finger_01_wizard/left_finger_02_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/left_shoulder_wizard/left_arm_wizard/left_hand_wizard/left_thumb_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/right_shoulder_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/right_shoulder_wizard/right_arm_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/right_shoulder_wizard/right_arm_wizard/right_hand_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/right_shoulder_wizard/right_arm_wizard/right_hand_wizard/right_finger_01_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/right_shoulder_wizard/right_arm_wizard/right_hand_wizard/right_finger_01_wizard/right_finger_02_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/right_shoulder_wizard/right_arm_wizard/right_hand_wizard/right_thumb_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/robes_back_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/robes_front_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/robes_left_wizard
+        weight: 1
+      - path: root/butt_wizard/body_wizard/robes_right_wizard
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -127,7 +216,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

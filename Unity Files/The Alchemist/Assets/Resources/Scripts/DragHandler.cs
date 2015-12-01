@@ -32,7 +32,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	public void OnBeginDrag (PointerEventData eventData){
 		itemBeingDragged = gameObject;
 		// enlarge object when beginning dragging
-		transform.localScale = new Vector3 (3, 3, 1);
+		transform.localScale = new Vector3 (2, 2, 1);
 		startPosition = transform.position;
 		startParent = transform.parent;
 		GetComponent<CanvasGroup>().blocksRaycasts = false;

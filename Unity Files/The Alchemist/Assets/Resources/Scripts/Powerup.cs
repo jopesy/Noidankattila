@@ -20,7 +20,7 @@ public class Powerup : MonoBehaviour {
 	
 	}
 	public void usePotion(int potionID){
-		if (potionID == 3) { // Super Jump potion
+		if (potionID == 4) { // Super Jump potion
 
 			playerModel.GetComponent<AnimationController>().Drink();
 

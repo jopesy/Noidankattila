@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/WorldMap.unity
-  - enabled: 1
     path: Assets/CauldronRoom.unity
+  - enabled: 1
+    path: Assets/JoonasTest.unity
+  - enabled: 1
+    path: Assets/WorldMap.unity
   - enabled: 1
     path: Assets/Level01.unity
   - enabled: 1
     path: Assets/Level02.unity
-  - enabled: 1
-    path: Assets/JoonasTest.unity
