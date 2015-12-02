@@ -28,8 +28,8 @@ public class Powerup : MonoBehaviour {
 			player.m_jumpPower = 15;
 
 			//remove used potion from inventory
-			if (inventory.HasItem(3)){
-				inventory.RemoveItem(3);
+			if (inventory.HasItem(4)){
+				inventory.RemoveItem(4);
 			}
 		}
 	}

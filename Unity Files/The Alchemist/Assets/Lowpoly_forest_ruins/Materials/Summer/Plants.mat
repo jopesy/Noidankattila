@@ -88,16 +88,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Cube
+          name: _SpecGlossMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 20acd916842766f4fb74c9e336c8a23a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SpecGlossMap
+          name: _Cube
         second:
-          m_Texture: {fileID: 2800000, guid: 20acd916842766f4fb74c9e336c8a23a, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -395,16 +395,12 @@ Material:
         second: {r: .352941155, g: .352941155, b: .352941155, a: 1}
       data:
         first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _ReflectColor
         second: {r: 1, g: 1, b: 1, a: .5}
       data:
         first:
-          name: _InstanceData
-        second: {r: 0, g: 0, b: 0, a: 0}
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _TreeInstanceColor
@@ -417,3 +413,7 @@ Material:
         first:
           name: _HueVariation
         second: {r: 1, g: .5, b: 0, a: .100000001}
+      data:
+        first:
+          name: _InstanceData
+        second: {r: 0, g: 0, b: 0, a: 0}
