@@ -20,6 +20,11 @@ TagManager:
   - ButtonPageLeft
   - ButtonPageRight
   - Effect
+  - FxTemporaire
+  - InventoryManager
+  - HealthIcon1
+  - HealthIcon2
+  - HealthIcon3
   layers:
   - Default
   - TransparentFX
