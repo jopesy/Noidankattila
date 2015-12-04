@@ -6212,7 +6212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_RootOrder
-      value: 80
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 5445820, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_Constraints
@@ -6220,7 +6220,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .270000011
+      value: .439999998
       objectReference: {fileID: 0}
     - target: {fileID: 6500376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_Size.y
@@ -6229,6 +6229,18 @@ Prefab:
     - target: {fileID: 6500376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_Center.y
       value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13673136, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
+      propertyPath: m_Radius
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 13673136, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
+      propertyPath: m_Center.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
