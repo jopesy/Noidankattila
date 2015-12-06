@@ -1035,6 +1035,7 @@ MonoBehaviour:
   maxHealth: 300
   currentHealth: 0
   gameManager: {fileID: 0}
+  gettingHitSound: {fileID: 435106, guid: c4acd3afb1832244c9cf289a1f8103c9, type: 2}
 --- !u!114 &11423688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1258,6 +1259,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: gettingHitSound
+      value: 
+      objectReference: {fileID: 435106, guid: c4acd3afb1832244c9cf289a1f8103c9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102174}

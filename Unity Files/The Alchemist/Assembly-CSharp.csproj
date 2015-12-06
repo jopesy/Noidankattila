@@ -96,6 +96,7 @@
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimationController.cs" />
      <Compile Include="Assets\Resources\Scripts\Cauldron.cs" />
+     <Compile Include="Assets\Resources\Scripts\DieOnHit.cs" />
      <Compile Include="Assets\Resources\Scripts\DragHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\IngredientPickup.cs" />

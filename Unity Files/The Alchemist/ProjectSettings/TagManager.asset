@@ -25,6 +25,7 @@ TagManager:
   - HealthIcon1
   - HealthIcon2
   - HealthIcon3
+  - Orc
   layers:
   - Default
   - TransparentFX

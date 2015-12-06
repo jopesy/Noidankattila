@@ -6,6 +6,7 @@ public class Orc : MonoBehaviour {
 	public Transform deathSound;
 	private GameObject deathSoundEffect;
 	private GameObject player;
+	private bool playerGettingHit;
 
 
 	// Use this for initialization
@@ -15,12 +16,21 @@ public class Orc : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
-			player.GetComponent<PlayerHealth> ().GetHit ();
+			if(playerGettingHit == false){ //Player is not currently getting hit
+				player.GetComponent<PlayerHealth> ().GetHit ();
+			}
 		}
+		StartCoroutine ("WaitOneSecond");
 	}
-	void Die(){
+	public void Die(){
 		//Add functionality here
+		Destroy (gameObject);
 		deathSoundEffect = Instantiate(deathSound).gameObject;
 		Destroy(deathSoundEffect, 2);
+	}
+	IEnumerator WaitOneSecond(){
+		playerGettingHit = true;
+		yield return new WaitForSeconds (1);
+		playerGettingHit = false;
 	}
 }

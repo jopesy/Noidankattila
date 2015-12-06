@@ -9,9 +9,13 @@ public class PlayerHealth : MonoBehaviour {
 	private GameObject healthIcon1;
 	private GameObject healthIcon2;
 	private GameObject healthIcon3;
+	public Transform gettingHitSound;
+	private GameObject gettingHitSoundEffect;
+	private GameObject playerModel; // Used for changing animation
 
 	void Start(){
 		currentHealth = maxHealth;
+		playerModel = GameObject.FindGameObjectWithTag ("PlayerModel");
 	}
 
 	void Awake(){
@@ -28,7 +32,11 @@ public class PlayerHealth : MonoBehaviour {
 	//Damage player by 100HP
 	public void GetHit(){
 		currentHealth -= 100;
+		playerModel.GetComponent<AnimationController>().GetHit();
+		gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
+		Destroy(gettingHitSoundEffect, 2);
 	}
+
 	//Heal player by 100HP
 	public void Heal(){
 		if (currentHealth < maxHealth) {

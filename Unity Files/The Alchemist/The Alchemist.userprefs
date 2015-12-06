@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\IngredientPickup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\PlayerHealth.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\PlayerHealth.cs" Line="57" Column="45" />
-      <File FileName="Assets\Resources\Scripts\Cauldron.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\PlayerHealth.cs" Line="18" Column="66" />
       <File FileName="Assets\Resources\Scripts\IngredientPickup.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\AnimationController.cs" Line="25" Column="115" />
+      <File FileName="Assets\Resources\Scripts\Powerup.cs" Line="17" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
