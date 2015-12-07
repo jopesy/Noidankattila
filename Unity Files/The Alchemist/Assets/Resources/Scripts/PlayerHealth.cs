@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void GetHit(){
 		currentHealth -= 100;
 		playerModel.GetComponent<AnimationController>().GetHit();
-		gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
+	//	gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
 		Destroy(gettingHitSoundEffect, 2);
 	}
 

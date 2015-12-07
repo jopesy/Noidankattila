@@ -35,11 +35,14 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		transform.localScale = new Vector3 (2, 2, 1);
 		startPosition = transform.position;
 		startParent = transform.parent;
-		GetComponent<CanvasGroup>().blocksRaycasts = false;
+		GetComponent<CanvasGroup> ().blocksRaycasts = false;
 
 		// show tooltip when beginning drag
-		tooltip = CreateTooltip();
-		showTooltip = true;
+		tooltip = CreateTooltip ();
+		// If game is running on desktop, show tooltip
+		if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXPlayer) {
+			showTooltip = true;
+		}
 	}
 
 	#endregion

@@ -26,13 +26,14 @@ public class Powerup : MonoBehaviour {
 
 			playerModel.GetComponent<AnimationController>().Drink();
 
-			// Set jumping power to 15
-			playerController.m_jumpPower = 15;
-
 			//remove used potion from inventory
 			if (inventory.HasItem(4)){
 				inventory.RemoveItem(4);
 			}
+			//Set jumping power to 15
+			playerController.m_jumpPower = 20;
+			//Effect lasts for 10 seconds and then returns to normal
+			StartCoroutine ("EffectDuration");
 		}
 		if (potionID == 3) { // Healing potion
 			
@@ -46,5 +47,10 @@ public class Powerup : MonoBehaviour {
 				inventory.RemoveItem(3);
 			}
 		}
+	}
+	//Sets jumping power back to default after ten seconds
+	IEnumerator EffectDuration(){
+		yield return new WaitForSeconds (10);
+		playerController.m_jumpPower = 12;
 	}
 }

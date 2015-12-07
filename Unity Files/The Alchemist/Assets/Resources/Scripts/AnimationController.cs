@@ -21,7 +21,7 @@ public class AnimationController : MonoBehaviour {
 	//		anim.Play ("Idle");
 
 	// THESE ARE FOR MOBILE CONTROLS
-		//If not currently drinking, attacking or brewing potion, either idle or walk
+		//If not currently drinking, attacking, getting hit or brewing potion, either idle or walk
 		if (!anim.IsPlaying ("Drink") && !anim.IsPlaying ("Attack") && !anim.IsPlaying("CastSpell") && !anim.IsPlaying("GetHitFromLeft") ) {
 			if (CrossPlatformInputManager.GetAxis ("Horizontal") > 0 || CrossPlatformInputManager.GetAxis ("Horizontal") < 0) {
 				anim.Play ("Walk");

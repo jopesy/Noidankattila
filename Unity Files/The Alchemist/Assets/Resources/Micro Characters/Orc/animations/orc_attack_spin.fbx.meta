@@ -31,8 +31,9 @@ ModelImporter:
     400020: right_hand_orc
     400022: right_shoulder_orc
     400024: root_orc
-    7400000: Take 001
+    7400000: Attack
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -52,7 +53,59 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root_orc
+        weight: 1
+      - path: root_orc/body_orc
+        weight: 1
+      - path: root_orc/body_orc/head_orc
+        weight: 1
+      - path: root_orc/body_orc/head_orc/eye_l_orc
+        weight: 1
+      - path: root_orc/body_orc/head_orc/eye_r_orc
+        weight: 1
+      - path: root_orc/body_orc/head_orc/face_orc
+        weight: 1
+      - path: root_orc/body_orc/left_shoulder_orc
+        weight: 1
+      - path: root_orc/body_orc/left_shoulder_orc/left_arm_orc
+        weight: 1
+      - path: root_orc/body_orc/left_shoulder_orc/left_arm_orc/left_hand_orc
+        weight: 1
+      - path: root_orc/body_orc/right_shoulder_orc
+        weight: 1
+      - path: root_orc/body_orc/right_shoulder_orc/right_arm_orc
+        weight: 1
+      - path: root_orc/body_orc/right_shoulder_orc/right_arm_orc/right_hand_orc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -91,7 +144,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
