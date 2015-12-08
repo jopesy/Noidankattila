@@ -85,8 +85,9 @@ ModelImporter:
     400074: wing_r_01
     400076: wing_r_02
     400078: wing_r_03
-    7400000: Take 001
+    7400000: Die
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -106,7 +107,113 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Die
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root_demon
+        weight: 1
+      - path: root_demon/butt_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/eye_l_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/eye_r_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/face_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/wing_l_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/wing_l_01/wing_l_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/wing_l_01/wing_l_02/wing_l_03
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/wing_r_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/wing_r_01/wing_r_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/head_demon/wing_r_01/wing_r_02/wing_r_03
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/jaw
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_index_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_index_01/left_index_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_middle_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_middle_01/left_middle_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_pinky_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_pinky_01/left_pinky_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_thumb_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/left_shoulder_demon/left_arm_demon/left_hand_demon/left_thumb_01/left_thumb_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_index_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_index_01/right_index_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_middle_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_middle_01/right_middle_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_pinky_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_pinky_01/right_pinky_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_thumb_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/right_shoulder_demon/right_arm_demon/right_hand_demon/right_thumb_01/right_thumb_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/tail_01
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/tail_01/tail_02
+        weight: 1
+      - path: root_demon/butt_demon/body_demon/tail_01/tail_02/tail_03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -145,7 +252,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

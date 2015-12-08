@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &115346
+--- !u!1 &139642
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 477924}
-  - 114: {fileID: 11482826}
+  - 4: {fileID: 464092}
+  - 114: {fileID: 11433986}
   m_Layer: 0
   m_Name: ItemDatabase
   m_TagString: Item Database
@@ -16,24 +16,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &477924
+--- !u!4 &464092
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115346}
+  m_GameObject: {fileID: 139642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .259272844, y: 2.56896305, z: -11.801095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11482826
+--- !u!114 &11433986
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115346}
+  m_GameObject: {fileID: 139642}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f92f9817abff89a409c7034ec9e84a2d, type: 3}
@@ -58,24 +58,24 @@ MonoBehaviour:
     itemIcon: {fileID: 0}
     itemValue: 10
     itemType: 0
-  - itemName: Super Jump Potion
+  - itemName: Health Potion
     itemID: 3
     itemDesc: A potion that restores some health.
     itemIcon: {fileID: 0}
     itemValue: 50
     itemType: 1
-  - itemName: 
-    itemID: 0
-    itemDesc: 
+  - itemName: Super Jump Potion
+    itemID: 4
+    itemDesc: A potion that makes you jump super high.
+    itemIcon: {fileID: 0}
+    itemValue: 50
+    itemType: 1
+  - itemName: Useless Potion
+    itemID: 5
+    itemDesc: A potion that doesn't really do anything useful.
     itemIcon: {fileID: 0}
     itemValue: 0
-    itemType: 0
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
-    itemValue: 0
-    itemType: 0
+    itemType: 1
   - itemName: 
     itemID: 0
     itemDesc: 
@@ -136,80 +136,8 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: items.Array.size
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[2].itemName
-      value: Blue Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[2].itemID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[2].itemDesc
-      value: A pretty rare blue mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[2].itemValue
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[3].itemName
-      value: Super Jump Potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[3].itemID
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[3].itemDesc
-      value: A potion that restores some health.
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[3].itemValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[3].itemType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[0].itemName
-      value: Red Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[0].itemDesc
-      value: A very poisonous red mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[9].itemName
-      value: Golden Star
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[9].itemID
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[10].itemID
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[10].itemName
-      value: Heart
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[1].itemName
-      value: Green Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: items.Array.data[1].itemDesc
-      value: A very common green mushroom
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 115346}
+  m_RootGameObject: {fileID: 139642}
   m_IsPrefabParent: 1
