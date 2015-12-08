@@ -20,6 +20,10 @@ public class InventoryManager : MonoBehaviour {
 			Destroy(gameObject);
 		}
 		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory>().inventory;
+		// Load inventory every time player enters world map
+		if (Application.loadedLevelName == "WorldMap") {
+			Load ();
+		}
 	}
 
 	//Saves player's inventory data to a file called "playerInfo.dat"

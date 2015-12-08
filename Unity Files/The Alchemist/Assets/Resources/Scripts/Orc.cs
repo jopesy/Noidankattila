@@ -27,7 +27,6 @@ public class Orc : MonoBehaviour {
 		StartCoroutine ("WaitOneSecond");
 	}
 	public void Die(){
-		//Add functionality here
 		this.GetComponent<OrcAnimationController> ().Die ();
 		//Disable attack box to prevent player from getting hurt
 		attackBox.enabled = false;

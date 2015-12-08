@@ -7,7 +7,7 @@ public class Item {
 	public string itemName;
 	public int itemID;
 	public string itemDesc; //Items's description
-	public Texture2D itemIcon;
+	//public Texture2D itemIcon;
 	public int itemValue;
 	public ItemType itemType;
 
