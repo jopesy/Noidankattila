@@ -10,7 +10,10 @@ public class PlayerHealth : MonoBehaviour {
 	private GameObject healthIcon2;
 	private GameObject healthIcon3;
 	public Transform gettingHitSound;
+	public Transform deathSound;
+	private bool deathSoundPlaying;
 	private GameObject gettingHitSoundEffect;
+	private GameObject deathSoundEffect;
 	private GameObject playerModel; // Used for changing animation
 
 	void Start(){
@@ -33,7 +36,7 @@ public class PlayerHealth : MonoBehaviour {
 	public void GetHit(){
 		currentHealth -= 100;
 		playerModel.GetComponent<AnimationController>().GetHit();
-	//	gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
+		gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
 		Destroy(gettingHitSoundEffect, 2);
 	}
 
@@ -50,6 +53,12 @@ public class PlayerHealth : MonoBehaviour {
 		if (currentHealth == 0) {
 			print ("Game Over");
 			//Add functionality here
+			//Play sound
+			if(deathSoundPlaying == false){
+				deathSoundEffect = Instantiate (deathSound).gameObject;
+				Destroy (deathSoundEffect, 3);
+				deathSoundPlaying = true;
+			}
 		}
 	}
 

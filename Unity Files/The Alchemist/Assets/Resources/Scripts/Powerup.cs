@@ -8,6 +8,8 @@ public class Powerup : MonoBehaviour {
 	private GameObject player;
 	private GameObject playerModel; // Used for changing animation
 	private Inventory inventory;
+	public Transform drinkingPotion;
+	private GameObject drinkingSound;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,8 @@ public class Powerup : MonoBehaviour {
 	
 	}
 	public void usePotion(int potionID){
+		drinkingSound = Instantiate (drinkingPotion).gameObject;
+		Destroy (drinkingSound, 3);
 		if (potionID == 4) { // Super Jump potion
 
 			playerModel.GetComponent<AnimationController>().Drink();

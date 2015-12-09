@@ -6099,7 +6099,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 214.820007
+      value: 215.660004
       objectReference: {fileID: 0}
     - target: {fileID: 456376, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7051,22 +7051,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 77988800}
---- !u!1 &1558314810 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 102174, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
-  m_PrefabInternal: {fileID: 1391256071}
---- !u!64 &1558314811
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1558314810}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 1db42cd874710ae41b50593130c14643, type: 3}
 --- !u!1 &1558378851 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: fb5742689c185814d9fe57ff9a6509af, type: 2}

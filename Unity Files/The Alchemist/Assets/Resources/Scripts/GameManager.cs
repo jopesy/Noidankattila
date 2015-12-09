@@ -5,7 +5,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	public AudioSource music;
-	
+
 	public void LoadLevel(string level){
 		Application.LoadLevel(level);
 	}

@@ -1036,6 +1036,7 @@ MonoBehaviour:
   currentHealth: 0
   gameManager: {fileID: 0}
   gettingHitSound: {fileID: 435106, guid: c4acd3afb1832244c9cf289a1f8103c9, type: 2}
+  deathSound: {fileID: 433242, guid: 56ee0a987eb5ccc4782e5fc867092f49, type: 2}
 --- !u!114 &11423688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1047,6 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1ffb89dc77d1548859aab43f7c1ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drinkingPotion: {fileID: 478016, guid: e574861d38106ff409b964a13c9bf475, type: 2}
 --- !u!114 &11427968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1267,6 +1269,14 @@ Prefab:
       propertyPath: moveSpeedMultiplier
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: drinkingPotion
+      value: 
+      objectReference: {fileID: 478016, guid: e574861d38106ff409b964a13c9bf475, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 433242, guid: 56ee0a987eb5ccc4782e5fc867092f49, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102174}

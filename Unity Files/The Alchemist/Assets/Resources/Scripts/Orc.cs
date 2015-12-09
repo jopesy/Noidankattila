@@ -30,8 +30,8 @@ public class Orc : MonoBehaviour {
 		this.GetComponent<OrcAnimationController> ().Die ();
 		//Disable attack box to prevent player from getting hurt
 		attackBox.enabled = false;
-	//	deathSoundEffect = Instantiate(deathSound).gameObject;
-	//	Destroy(deathSoundEffect, 2);
+		deathSoundEffect = Instantiate(deathSound).gameObject;
+		Destroy(deathSoundEffect, 2);
 		//Wait for 2 seconds before destroying the gameobject
 		StartCoroutine ("WaitTwoSeconds");
 	}
