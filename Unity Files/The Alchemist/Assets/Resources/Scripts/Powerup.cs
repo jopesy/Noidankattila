@@ -51,10 +51,26 @@ public class Powerup : MonoBehaviour {
 				inventory.RemoveItem(3);
 			}
 		}
+		if (potionID == 5) { //Fireball potion
+
+			playerModel.GetComponent<AnimationController>().Drink();
+
+			player.GetComponent<Fireball>().canShoot = true;
+			StartCoroutine("FireballEffectDuration");
+
+			//remove used potion from inventory
+			if (inventory.HasItem(5)){
+				inventory.RemoveItem(5);
+			}
+		}
 	}
 	//Sets jumping power back to default after ten seconds
 	IEnumerator EffectDuration(){
 		yield return new WaitForSeconds (10);
 		playerController.m_jumpPower = 12;
+	}
+	IEnumerator FireballEffectDuration(){
+		yield return new WaitForSeconds (10);
+		player.GetComponent<Fireball>().canShoot = false;
 	}
 }

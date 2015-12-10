@@ -4,10 +4,11 @@ using System.Collections;
 public class Fireball : MonoBehaviour {
 	public Transform fireball;
 	private GameObject fireballClone;
+	public bool canShoot;
 
 
 	public void Update(){
-		if (Input.GetMouseButtonDown (0)) {
+		if (canShoot == true && Input.GetMouseButtonDown (0)) {
 			Shoot ();
 		}
 	}

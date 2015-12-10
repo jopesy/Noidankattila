@@ -17,6 +17,7 @@ GameObject:
   - 136: {fileID: 13673136}
   - 114: {fileID: 11423688}
   - 114: {fileID: 11402460}
+  - 114: {fileID: 11468480}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1111,6 +1112,19 @@ MonoBehaviour:
     m_Bits: 0
   lookBlendTime: 0
   lookWeight: 0
+--- !u!114 &11468480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9d869985e1313479f2c0f79a8165b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireball: {fileID: 491280, guid: 0a1c0d907a45f274fa08d4a0250b920b, type: 2}
+  canShoot: 0
 --- !u!136 &13661838
 CapsuleCollider:
   m_ObjectHideFlags: 1

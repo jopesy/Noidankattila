@@ -1240,6 +1240,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11433986, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+      propertyPath: items.Array.data[6].itemID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433986, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+      propertyPath: items.Array.data[6].itemName
+      value: Fireball Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433986, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+      propertyPath: items.Array.data[6].itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433986, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+      propertyPath: items.Array.data[6].itemDesc
+      value: A potion that let's you shoot fireballs for 5 seconds!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433986, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
+      propertyPath: items.Array.data[6].itemValue
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 566f59d57bfdbd74c860db02cf69d5f8, type: 2}
   m_IsPrefabParent: 0

@@ -41,6 +41,8 @@ TagManager:
   - GameOverPanel
   - PausePanel
   - Fireball
+  - PotionBookFireball
+  - FireballPotionCreated
   layers:
   - Default
   - TransparentFX
