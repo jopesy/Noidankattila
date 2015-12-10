@@ -34,6 +34,7 @@ public class FinishLevel : MonoBehaviour {
 	//When player triggers the collider
 	void OnTriggerEnter(Collider other){
 		if(other.tag == "Player"){
+			Time.timeScale = 0;
 			print ("Level cleared!");
 
 			// Show the "level cleared" panel
