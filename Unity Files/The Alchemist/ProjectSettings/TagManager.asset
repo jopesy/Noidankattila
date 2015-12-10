@@ -38,6 +38,8 @@ TagManager:
   - InfoPanel
   - LevelClearedPanel
   - ButtonWorldMap
+  - GameOverPanel
+  - PausePanel
   layers:
   - Default
   - TransparentFX
