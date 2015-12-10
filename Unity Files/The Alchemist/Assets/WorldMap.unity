@@ -351,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &238989703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -77.4000015, y: -37}
+  m_AnchoredPosition: {x: 132.5, y: -83.1999969}
   m_SizeDelta: {x: 49.7000008, y: 22.75}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &383470729
@@ -1036,7 +1036,7 @@ RectTransform:
   m_RootOrder: 10
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -268.799988, y: 73}
+  m_AnchoredPosition: {x: -155.600006, y: 102}
   m_SizeDelta: {x: 49.7000008, y: 22.75}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &622452720
@@ -1472,7 +1472,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a0ba95f7ecca1254fbbb03f10e3af756, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dddd29b6cd037845a78bef1fb9083d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1756,7 +1756,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 189.5, y: -19.1499996}
+  m_AnchoredPosition: {x: 138.549988, y: 75}
   m_SizeDelta: {x: 61.7999992, y: 60.2000008}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &996586727
@@ -2013,7 +2013,7 @@ RectTransform:
   m_RootOrder: 11
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -122.599998, y: 141.399994}
+  m_AnchoredPosition: {x: -269.200012, y: -12.3999996}
   m_SizeDelta: {x: 49.7000008, y: 22.75}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1026531540
@@ -2389,7 +2389,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -76.9000015, y: -72.5999985}
+  m_AnchoredPosition: {x: 133, y: -118.800003}
   m_SizeDelta: {x: 44, y: 45.9000015}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1359091666
@@ -2425,7 +2425,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -123.400002, y: 105.300003}
+  m_AnchoredPosition: {x: -270, y: -48.5}
   m_SizeDelta: {x: 44.2999992, y: 47.0999985}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1359091668
@@ -3082,7 +3082,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -268.600006, y: 37.2000008}
+  m_AnchoredPosition: {x: -155.399994, y: 66.1999969}
   m_SizeDelta: {x: 43.7999992, y: 45.7000008}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1916068786
@@ -3231,7 +3231,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0
+      value: .156000003
       inSlope: 0
       outSlope: 0
       tangentMode: 0

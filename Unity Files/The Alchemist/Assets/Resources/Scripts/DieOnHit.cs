@@ -10,7 +10,7 @@ public class DieOnHit : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		if (other.tag == "Player") {
+		if (other.tag == "Player" || other.tag == "Fireball") {
 			enemy.GetComponent<Orc>().Die();
 		}
 	}

@@ -94,13 +94,13 @@
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-     <Compile Include="Assets\PressToStartHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimationController.cs" />
      <Compile Include="Assets\Resources\Scripts\Cauldron.cs" />
      <Compile Include="Assets\Resources\Scripts\DieOnHit.cs" />
      <Compile Include="Assets\Resources\Scripts\DragHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\FallHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\FinishLevel.cs" />
+     <Compile Include="Assets\Resources\Scripts\Fireball.cs" />
      <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\IngredientPickup.cs" />
      <Compile Include="Assets\Resources\Scripts\Inventory.cs" />
@@ -111,6 +111,7 @@
      <Compile Include="Assets\Resources\Scripts\OrcAnimationController.cs" />
      <Compile Include="Assets\Resources\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Resources\Scripts\Powerup.cs" />
+     <Compile Include="Assets\Resources\Scripts\PressToStartHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\Slot.cs" />
      <Compile Include="Assets\Resources\Scripts\TeleportObject.cs" />
      <Compile Include="Assets\Resources\Scripts\UIHandler.cs" />

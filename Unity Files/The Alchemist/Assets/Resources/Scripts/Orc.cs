@@ -8,6 +8,7 @@ public class Orc : MonoBehaviour {
 	private GameObject player;
 	private bool playerGettingHit;
 	private BoxCollider attackBox;
+	private bool deathSoundPlaying;
 
 
 	//Use this for initialization
@@ -30,8 +31,11 @@ public class Orc : MonoBehaviour {
 		this.GetComponent<OrcAnimationController> ().Die ();
 		//Disable attack box to prevent player from getting hurt
 		attackBox.enabled = false;
-		deathSoundEffect = Instantiate(deathSound).gameObject;
-		Destroy(deathSoundEffect, 2);
+		if (deathSoundPlaying == false) {
+			deathSoundEffect = Instantiate (deathSound).gameObject;
+			Destroy (deathSoundEffect, 2);
+			deathSoundPlaying = true;
+		}
 		//Wait for 2 seconds before destroying the gameobject
 		StartCoroutine ("WaitTwoSeconds");
 	}
