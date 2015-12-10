@@ -10,7 +10,13 @@ public class PlayerHealth : MonoBehaviour {
 	private GameObject healthIcon2;
 	private GameObject healthIcon3;
 	public Transform gettingHitSound;
+
+	public Transform deathSound;
+	private bool deathSoundPlaying;
+	private GameObject gameOverPanel;
+
 	private GameObject gettingHitSoundEffect;
+	private GameObject deathSoundEffect;
 	private GameObject playerModel; // Used for changing animation
 
 	void Start(){
@@ -19,21 +25,24 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	void Awake(){
+		Time.timeScale = 1;
 		gameManager = GameObject.FindGameObjectWithTag ("GameManager");
 		healthIcon1 = GameObject.FindGameObjectWithTag("HealthIcon1");
 		healthIcon2 = GameObject.FindGameObjectWithTag("HealthIcon2");
 		healthIcon3 = GameObject.FindGameObjectWithTag("HealthIcon3");
+		gameOverPanel = GameObject.FindGameObjectWithTag ("GameOverPanel");
 
 		healthIcon1.gameObject.SetActive (false);
 		healthIcon2.gameObject.SetActive (false);
 		healthIcon3.gameObject.SetActive (false);
+		gameOverPanel.gameObject.SetActive (false);
 	}
 
 	//Damage player by 100HP
 	public void GetHit(){
 		currentHealth -= 100;
 		playerModel.GetComponent<AnimationController>().GetHit();
-	//	gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
+		gettingHitSoundEffect = Instantiate(gettingHitSound).gameObject;
 		Destroy(gettingHitSoundEffect, 2);
 	}
 
@@ -50,6 +59,15 @@ public class PlayerHealth : MonoBehaviour {
 		if (currentHealth == 0) {
 			print ("Game Over");
 			//Add functionality here
+			//Play sound
+			if(deathSoundPlaying == false){
+				deathSoundEffect = Instantiate (deathSound).gameObject;
+				Destroy (deathSoundEffect, 3);
+				deathSoundPlaying = true;
+			}
+			//Show "game over window"
+			gameOverPanel.gameObject.SetActive (true);
+			Time.timeScale = 0;
 		}
 	}
 

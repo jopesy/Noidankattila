@@ -25,7 +25,21 @@ TagManager:
   - HealthIcon1
   - HealthIcon2
   - HealthIcon3
+  - Level1Star1
+  - Level1Star2
+  - Level1Star3
+  - Level2Star1
+  - Level2Star2
+  - Level2Star3
+  - Level3Star1
+  - Level3Star2
+  - Level3Star3
   - Orc
+  - InfoPanel
+  - LevelClearedPanel
+  - ButtonWorldMap
+  - GameOverPanel
+  - PausePanel
   layers:
   - Default
   - TransparentFX

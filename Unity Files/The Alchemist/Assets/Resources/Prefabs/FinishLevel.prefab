@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 257.089996, y: 17.5300007, z: -.709999979}
+  m_LocalPosition: {x: 26.4699993, y: .395400524, z: .356580019}
   m_LocalScale: {x: 1, y: 2.64540792, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,6 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc3f76c5e80bb542958ab9f7d59e06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelClearedSound: {fileID: 495676, guid: ca211dde31ef66a4f88922fe8f5ba9c5, type: 2}
+  starsText: {fileID: 0}
+  heartsText: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

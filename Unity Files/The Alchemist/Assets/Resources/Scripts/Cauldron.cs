@@ -10,6 +10,8 @@ public class Cauldron : MonoBehaviour {
 	private Inventory inventory;
 	public Transform potionCreatedSound;
 	private GameObject soundEffect;
+	public Transform cauldronBubblingSound;
+	private GameObject cauldronBubblingSoundEffect;
 	private GameObject healthPotionCreatedMessage;
 	private GameObject jumpPotionCreatedMessage;
 	private GameObject uselessPotionCreatedMessage;
@@ -19,6 +21,7 @@ public class Cauldron : MonoBehaviour {
 	private GameObject buttonOK;
 	private GameObject buttonPageLeft;
 	private GameObject buttonPageRight;
+	private GameObject infoPanel;
 	public Transform particleEffect;
 	private GameObject effect;
 	private int potionCreated;
@@ -41,6 +44,7 @@ public class Cauldron : MonoBehaviour {
 		buttonOK = GameObject.FindGameObjectWithTag("ButtonClose");
 		buttonPageLeft = GameObject.FindGameObjectWithTag("ButtonPageLeft");
 		buttonPageRight = GameObject.FindGameObjectWithTag("ButtonPageRight");
+		infoPanel = GameObject.FindGameObjectWithTag("InfoPanel");
 
 		healthPotionCreatedMessage.gameObject.SetActive (false);
 		jumpPotionCreatedMessage.gameObject.SetActive (false);
@@ -50,6 +54,7 @@ public class Cauldron : MonoBehaviour {
 		buttonOK.gameObject.SetActive (false);
 		buttonPageLeft.gameObject.SetActive (false);
 		buttonPageRight.gameObject.SetActive (false);
+		infoPanel.gameObject.SetActive (false);
 
 	}
 
@@ -106,6 +111,9 @@ public class Cauldron : MonoBehaviour {
 		this.potionIngredients.Clear();
 		//Play animation
 		playerModel.GetComponent<AnimationController>().CastSpell();
+		//Play Cauldron bubbling sound
+		cauldronBubblingSoundEffect = Instantiate (cauldronBubblingSound).gameObject;
+		Destroy (cauldronBubblingSoundEffect, 2);
 		//Wait for the animation to finish before showing the message
 		StartCoroutine ("WaitThreeSeconds");
 	}
@@ -114,6 +122,7 @@ public class Cauldron : MonoBehaviour {
 		//Play sound
 		soundEffect= Instantiate (potionCreatedSound).gameObject;
 		Destroy (soundEffect, 3);
+
 		// Show effect
 		effect = Instantiate (particleEffect).gameObject;
 
@@ -149,6 +158,9 @@ public class Cauldron : MonoBehaviour {
 		if (potionBookSuperJump.gameObject.activeSelf == true) {
 			potionBookSuperJump.gameObject.SetActive (false);
 		}
+		if (infoPanel.gameObject.activeSelf == true) {
+			infoPanel.gameObject.SetActive (false);
+		}
 		buttonOK.gameObject.SetActive (false);
 		buttonPageLeft.gameObject.SetActive (false);
 		buttonPageRight.gameObject.SetActive (false);
@@ -164,6 +176,11 @@ public class Cauldron : MonoBehaviour {
 		}
 		buttonPageLeft.gameObject.SetActive (true);
 		buttonPageRight.gameObject.SetActive (true);
+		buttonOK.gameObject.SetActive (true);
+	}
+	public void ShowInfoPanel(){
+		HideMessages ();
+		infoPanel.gameObject.SetActive (true);
 		buttonOK.gameObject.SetActive (true);
 	}
 }
