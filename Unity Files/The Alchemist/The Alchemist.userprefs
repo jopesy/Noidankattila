@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Level01.unity">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\GameManager.cs">
     <Files>
-      <File FileName="Assets\Level01.unity" Line="11057" Column="10" />
-      <File FileName="Assets\Resources\Scripts\Fireball.cs" Line="22" Column="80" />
+      <File FileName="Assets\Resources\Scripts\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Fireball.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\PlayerHealth.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
