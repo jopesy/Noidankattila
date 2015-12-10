@@ -94,6 +94,7 @@
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\Lowpoly_forest_ruins\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\PressToStartHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimationController.cs" />
      <Compile Include="Assets\Resources\Scripts\Cauldron.cs" />
      <Compile Include="Assets\Resources\Scripts\DieOnHit.cs" />
