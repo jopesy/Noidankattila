@@ -45,6 +45,9 @@ TagManager:
   - FireballPotionCreated
   - WorldMapHandler
   - FinishLevel
+  - PanelStar1
+  - PanelStar2
+  - PanelStar3
   layers:
   - Default
   - TransparentFX
