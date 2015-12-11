@@ -7674,6 +7674,10 @@ Prefab:
       propertyPath: heartsText
       value: 
       objectReference: {fileID: 1655684014}
+    - target: {fileID: 11447802, guid: 655ef541606185e4bb9f8edc83142e01, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 102174, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 655ef541606185e4bb9f8edc83142e01, type: 2}
   m_IsPrefabParent: 0

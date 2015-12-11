@@ -28,8 +28,8 @@ public class FinishLevel : MonoBehaviour {
 	private GameObject panelStar3;
 
 	public GameObject player;
-	public int remainingHealth;
-	public int pointsFromHealth;
+	private int remainingHealth;
+	private int pointsFromHealth;
 	private bool soundPlaying;
 
 	// Use this for initialization
@@ -76,9 +76,11 @@ public class FinishLevel : MonoBehaviour {
 			if(Application.loadedLevelName == "Level01"){
 				collectedStars = starsLevel1;
 			}
-			if(Application.loadedLevelName == "Level02"){
+			if(Application.loadedLevelName == "liulevel"){
 				collectedStars = starsLevel2;
 			}
+
+			print ("COLLECTED STARS: " + collectedStars);
 
 			// Show the "level cleared" panel
 			levelClearedPanel.gameObject.SetActive (true);
@@ -86,18 +88,18 @@ public class FinishLevel : MonoBehaviour {
 			starsText.text = collectedStars.ToString () + " / 3";
 			heartsText.text = pointsFromHealth.ToString() + " / 3";
 
-			if (collectedStars + pointsFromHealth >= 5) {
+			if (collectedStars == 3) {
 				//3 stars
 				panelStar1.gameObject.SetActive (true);
 				panelStar2.gameObject.SetActive (true);
 				panelStar3.gameObject.SetActive (true);
 			}
-			if (collectedStars + pointsFromHealth >= 3) {
+			if (collectedStars == 2) {
 				//2 stars
 				panelStar1.gameObject.SetActive (true);
 				panelStar2.gameObject.SetActive (true);
 			}
-			if (collectedStars + pointsFromHealth > 0) {
+			if (collectedStars == 1) {
 				//1 star
 				panelStar1.gameObject.SetActive (true);
 			}
@@ -140,7 +142,7 @@ public class FinishLevel : MonoBehaviour {
 				stars.Insert(0, loadedStars[0]);
 			}
 		}
-		if (Application.loadedLevelName == "Level02") {
+		if (Application.loadedLevelName == "liulevel") {
 			if(starsLevel2 > loadedStars[1]){
 				stars.Insert(1, starsLevel2);
 			}

@@ -15,7 +15,7 @@ public class StarPickup : MonoBehaviour {
 			if(Application.loadedLevelName == "Level01"){
 				finishLevel.GetComponent<FinishLevel>().starsLevel1 += 1;
 			}
-			if(Application.loadedLevelName == "Level02"){
+			if(Application.loadedLevelName == "liulevel"){
 				finishLevel.GetComponent<FinishLevel>().starsLevel2 += 1;
 			}
 		}
