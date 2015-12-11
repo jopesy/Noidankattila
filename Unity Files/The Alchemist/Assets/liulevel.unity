@@ -7051,6 +7051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 77988800}
+  starsCollected: 0
 --- !u!1 &1558378851 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: fb5742689c185814d9fe57ff9a6509af, type: 2}
@@ -7319,6 +7320,10 @@ Prefab:
       propertyPath: heartsText
       value: 
       objectReference: {fileID: 1655684014}
+    - target: {fileID: 11447802, guid: 655ef541606185e4bb9f8edc83142e01, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 102174, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 655ef541606185e4bb9f8edc83142e01, type: 2}
   m_IsPrefabParent: 0
