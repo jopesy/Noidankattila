@@ -29,6 +29,7 @@ GameObject:
   - 65: {fileID: 6587024}
   - 114: {fileID: 11430608}
   - 111: {fileID: 11164868}
+  - 114: {fileID: 11482812}
   m_Layer: 0
   m_Name: Golden Star
   m_TagString: Untagged
@@ -164,6 +165,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 9
   pickupSound: {fileID: 440980, guid: e3af987e53e29bc4e875ef9159784b8f, type: 2}
+--- !u!114 &11482812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ed249de8386b54498cdce2174ae820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

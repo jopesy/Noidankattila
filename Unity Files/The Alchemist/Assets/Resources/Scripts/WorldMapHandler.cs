@@ -1,5 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using System.Linq;
 
 public class WorldMapHandler : MonoBehaviour {
 
@@ -12,11 +17,30 @@ public class WorldMapHandler : MonoBehaviour {
 	
 	public int starsEarnedLevel1;
 	public int starsEarnedLevel2;
+	public List<int> stars = new List<int>();
+	private List<int> loadedStars;
+
+	private GameObject gameManager;
 	
 	//Hide stars initially
 	void Awake(){
-		starsEarnedLevel1 = 3;
-		starsEarnedLevel2 = 3;
+
+		gameManager = GameObject.FindGameObjectWithTag("GameManager");
+
+		starsEarnedLevel1 = 0;
+		starsEarnedLevel2 = 0;
+
+		stars = LoadStars ();
+		if (stars.ElementAtOrDefault (0) != null) {
+			starsEarnedLevel1 = stars [0];
+		} else {
+			starsEarnedLevel1 = 0;
+		}
+		if (stars.ElementAtOrDefault (1) != null) {
+			starsEarnedLevel2 = stars [1];
+		} else {
+			starsEarnedLevel2 = 0;
+		}
 		
 		level1Star1 = GameObject.FindGameObjectWithTag("Level1Star1");
 		level1Star2 = GameObject.FindGameObjectWithTag("Level1Star2");
@@ -52,6 +76,27 @@ public class WorldMapHandler : MonoBehaviour {
 		}
 		if (starsEarnedLevel2 == 2) {
 			level2Star3.gameObject.SetActive (false);
+		}
+	}
+	//Loads number of stars player has earned from each level
+	public List<int> LoadStars(){
+		stars = new List<int>();
+		loadedStars = new List<int>();
+		stars.Insert(0, 0);
+		stars.Insert(1, 0);
+		if (File.Exists (Application.persistentDataPath + "/stars.dat")) {
+			BinaryFormatter bf = new BinaryFormatter ();
+			FileStream file = File.Open (Application.persistentDataPath + "/stars.dat", FileMode.Open);
+			loadedStars = (List<int>)bf.Deserialize (file);
+			file.Close ();
+			stars = loadedStars;
+			print ("Stars loaded!");
+			print("STARS [0] LOADED: " + stars[0]);
+			print("STARS [1] LOADED: " + stars[1]);
+			return stars;
+		}
+		else {
+			return stars;
 		}
 	}
 }

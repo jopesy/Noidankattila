@@ -113,6 +113,7 @@
      <Compile Include="Assets\Resources\Scripts\Powerup.cs" />
      <Compile Include="Assets\Resources\Scripts\PressToStartHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\Slot.cs" />
+     <Compile Include="Assets\Resources\Scripts\StarPickup.cs" />
      <Compile Include="Assets\Resources\Scripts\TeleportObject.cs" />
      <Compile Include="Assets\Resources\Scripts\UIHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\WorldMapHandler.cs" />

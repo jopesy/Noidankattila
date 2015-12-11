@@ -43,91 +43,76 @@ MonoBehaviour:
   - itemName: Red Mushroom
     itemID: 0
     itemDesc: A very poisonous red mushroom
-    itemIcon: {fileID: 0}
     itemValue: 100
     itemType: 0
   - itemName: Green Mushroom
     itemID: 1
     itemDesc: A very common green mushroom
-    itemIcon: {fileID: 0}
     itemValue: 2
     itemType: 0
   - itemName: Blue Mushroom
     itemID: 2
     itemDesc: A pretty rare blue mushroom
-    itemIcon: {fileID: 0}
     itemValue: 10
     itemType: 0
   - itemName: Health Potion
     itemID: 3
     itemDesc: A potion that restores some health.
-    itemIcon: {fileID: 0}
     itemValue: 50
     itemType: 1
   - itemName: Super Jump Potion
     itemID: 4
     itemDesc: A potion that makes you jump super high.
-    itemIcon: {fileID: 0}
     itemValue: 50
     itemType: 1
   - itemName: Useless Potion
     itemID: 5
     itemDesc: A potion that doesn't really do anything useful.
-    itemIcon: {fileID: 0}
     itemValue: 0
+    itemType: 1
+  - itemName: Fireball Potion
+    itemID: 6
+    itemDesc: A potion that let's you shoot fireballs for 5 seconds!
+    itemValue: 200
     itemType: 1
   - itemName: 
     itemID: 0
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: 
     itemID: 0
     itemDesc: 
-    itemIcon: {fileID: 0}
-    itemValue: 0
-    itemType: 0
-  - itemName: 
-    itemID: 0
-    itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: Golden Star
     itemID: 9
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: Heart
     itemID: 10
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: 
     itemID: 0
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: 
     itemID: 0
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: 
     itemID: 0
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
   - itemName: 
     itemID: 0
     itemDesc: 
-    itemIcon: {fileID: 0}
     itemValue: 0
     itemType: 0
 --- !u!1001 &100100000
