@@ -41,7 +41,8 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		tooltip = CreateTooltip ();
 		// If game is running on desktop, show tooltip
 		if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXPlayer) {
-			showTooltip = true;
+			//showTooltip = true;
+			showTooltip = false;
 		}
 	}
 
