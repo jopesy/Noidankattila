@@ -47,7 +47,7 @@ GameObject:
   - 114: {fileID: 11452086}
   m_Layer: 5
   m_Name: Star2
-  m_TagString: Untagged
+  m_TagString: PanelStar2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - 114: {fileID: 11446542}
   m_Layer: 5
   m_Name: Star1
-  m_TagString: Untagged
+  m_TagString: PanelStar1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -465,7 +465,7 @@ GameObject:
   - 114: {fileID: 11420212}
   m_Layer: 5
   m_Name: Star3
-  m_TagString: Untagged
+  m_TagString: PanelStar3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -748,7 +748,7 @@ GameObject:
   - 222: {fileID: 22257350}
   - 114: {fileID: 11432356}
   m_Layer: 5
-  m_Name: PausePanel
+  m_Name: MenuPanel
   m_TagString: PausePanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3621,7 +3621,7 @@ RectTransform:
   m_RootOrder: 11
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -354.299988, y: 183}
+  m_AnchoredPosition: {x: -355.100006, y: 195.300003}
   m_SizeDelta: {x: 156.199997, y: 90}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22404224
@@ -3840,7 +3840,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 252.100006, y: 188}
+  m_AnchoredPosition: {x: 300.899994, y: 200.600006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22440902
@@ -3945,7 +3945,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 324, y: 188}
+  m_AnchoredPosition: {x: 372.799988, y: 200.600006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22451596
@@ -4155,7 +4155,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 287.899994, y: 188}
+  m_AnchoredPosition: {x: 336.700012, y: 200.600006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22473078

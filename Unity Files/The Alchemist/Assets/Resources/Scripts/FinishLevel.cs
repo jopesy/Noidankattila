@@ -23,7 +23,13 @@ public class FinishLevel : MonoBehaviour {
 	private int collectedStars;
 	private List<int> loadedStars;
 
+	private GameObject panelStar1;
+	private GameObject panelStar2;
+	private GameObject panelStar3;
+
+	public GameObject player;
 	public int remainingHealth;
+	public int pointsFromHealth;
 	private bool soundPlaying;
 
 	// Use this for initialization
@@ -33,12 +39,32 @@ public class FinishLevel : MonoBehaviour {
 		buttonWorldMap = GameObject.FindGameObjectWithTag("ButtonWorldMap");
 		levelClearedPanel = GameObject.FindGameObjectWithTag("LevelClearedPanel");
 
+		panelStar1 = GameObject.FindGameObjectWithTag("PanelStar1");
+		panelStar2 = GameObject.FindGameObjectWithTag("PanelStar2");
+		panelStar3 = GameObject.FindGameObjectWithTag("PanelStar3");
+
+		panelStar1.gameObject.SetActive (false);
+		panelStar2.gameObject.SetActive (false);
+		panelStar3.gameObject.SetActive (false);
+
 		//Hide panel initially
 		levelClearedPanel.gameObject.SetActive (false);
 		buttonWorldMap.gameObject.SetActive (false);
 		starsLevel1 = 0;
 		starsLevel2 = 0;
-		remainingHealth = 0;
+
+		player = GameObject.FindGameObjectWithTag("Player");
+		remainingHealth = player.GetComponent<PlayerHealth>().currentHealth;
+		print ("remaining health:" + remainingHealth);
+		if (remainingHealth == 100) {
+			pointsFromHealth = 1;
+		}
+		if (remainingHealth == 200) {
+			pointsFromHealth = 2;
+		}
+		if (remainingHealth == 300) {
+			pointsFromHealth = 3;
+		}
 	}
 
 	//When player triggers the collider
@@ -58,16 +84,22 @@ public class FinishLevel : MonoBehaviour {
 			levelClearedPanel.gameObject.SetActive (true);
 			buttonWorldMap.gameObject.SetActive (true);
 			starsText.text = collectedStars.ToString () + " / 3";
-			heartsText.text = remainingHealth.ToString() + " / 3";
+			heartsText.text = pointsFromHealth.ToString() + " / 3";
 
-			if (collectedStars + remainingHealth >= 5) {
+			if (collectedStars + pointsFromHealth >= 5) {
 				//3 stars
+				panelStar1.gameObject.SetActive (true);
+				panelStar2.gameObject.SetActive (true);
+				panelStar3.gameObject.SetActive (true);
 			}
-			if (collectedStars + remainingHealth >= 3) {
+			if (collectedStars + pointsFromHealth >= 3) {
 				//2 stars
+				panelStar1.gameObject.SetActive (true);
+				panelStar2.gameObject.SetActive (true);
 			}
-			if (collectedStars + remainingHealth > 0) {
+			if (collectedStars + pointsFromHealth > 0) {
 				//1 star
+				panelStar1.gameObject.SetActive (true);
 			}
 
 
