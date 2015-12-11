@@ -36255,7 +36255,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 27a6ad16555674f4e89f354ef1f2f9a2, type: 3}
   m_PrefabInternal: {fileID: 1496982102}
-<<<<<<< HEAD
 --- !u!1 &1507733862 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 102174, guid: 2699d01c15b15a0488e54d2a22e9b9bd, type: 2}
@@ -36272,8 +36271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 423070, guid: e822c3f0fb7f35d4e88ce6b19900f874, type: 2}
-=======
->>>>>>> origin/master
 --- !u!1001 &1527764427
 Prefab:
   m_ObjectHideFlags: 0
