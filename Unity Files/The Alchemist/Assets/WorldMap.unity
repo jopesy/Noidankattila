@@ -351,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &238989703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2696,6 +2696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 1918351225}
+  starsCollected: 0
 --- !u!4 &1465472986
 Transform:
   m_ObjectHideFlags: 0
@@ -2791,7 +2792,7 @@ GameObject:
   - 114: {fileID: 1540647045}
   m_Layer: 0
   m_Name: WorldMapHandler
-  m_TagString: Untagged
+  m_TagString: WorldMapHandler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2809,6 +2810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starsEarnedLevel1: 0
   starsEarnedLevel2: 0
+  stars: 
 --- !u!4 &1540647046
 Transform:
   m_ObjectHideFlags: 0

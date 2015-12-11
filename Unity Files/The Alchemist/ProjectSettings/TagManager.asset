@@ -43,6 +43,8 @@ TagManager:
   - Fireball
   - PotionBookFireball
   - FireballPotionCreated
+  - WorldMapHandler
+  - FinishLevel
   layers:
   - Default
   - TransparentFX

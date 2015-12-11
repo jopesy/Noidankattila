@@ -213,7 +213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
 --- !u!1001 &81585953
 Prefab:
   m_ObjectHideFlags: 0
@@ -887,6 +887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 491280, guid: 0a1c0d907a45f274fa08d4a0250b920b, type: 2}
+  canShoot: 0
 --- !u!1 &974363999
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +978,7 @@ Transform:
   m_LocalScale: {x: .0500000007, y: .0500000007, z: .0500000007}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
 --- !u!1001 &1034096243
 Prefab:
   m_ObjectHideFlags: 0
@@ -1260,6 +1261,10 @@ Prefab:
       propertyPath: heartsText
       value: 
       objectReference: {fileID: 1896451096}
+    - target: {fileID: 192684, guid: 655ef541606185e4bb9f8edc83142e01, type: 2}
+      propertyPath: m_TagString
+      value: FinishLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 655ef541606185e4bb9f8edc83142e01, type: 2}
   m_IsPrefabParent: 0
@@ -1374,6 +1379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 77988800}
+  starsCollected: 0
 --- !u!1001 &1611915408
 Prefab:
   m_ObjectHideFlags: 0
@@ -1383,7 +1389,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 437220, guid: d2bb8296c2fea4f44a9d151466f87b4c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.3199997
+      value: 9.88000011
       objectReference: {fileID: 0}
     - target: {fileID: 437220, guid: d2bb8296c2fea4f44a9d151466f87b4c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1411,7 +1417,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 437220, guid: d2bb8296c2fea4f44a9d151466f87b4c, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2bb8296c2fea4f44a9d151466f87b4c, type: 2}
