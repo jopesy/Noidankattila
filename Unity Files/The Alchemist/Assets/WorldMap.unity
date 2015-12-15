@@ -152,7 +152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 1
+  m_Text: "Level \n1"
 --- !u!222 &87351625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -709,7 +709,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 2
+  m_Text: 'Level
+
+    2'
 --- !u!222 &393525236
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1081,7 +1083,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
       propertyPath: inventory.Array.size
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 483916, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1130,6 +1132,198 @@ Prefab:
     - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
       propertyPath: inventory.Array.data[2].itemID
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[6].itemID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[7].itemID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[8].itemID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[6].itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[7].itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[8].itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[6].itemName
+      value: Super Jump Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[7].itemName
+      value: Healing potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[8].itemName
+      value: Fireball Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[0].itemName
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[1].itemName
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[2].itemName
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[3].itemName
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[4].itemName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[5].itemName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[9].itemName
+      value: Super Jump Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[9].itemID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[9].itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[10].itemName
+      value: Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[10].itemID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[10].itemType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[11].itemName
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[11].itemID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[11].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[12].itemName
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[12].itemID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[12].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[13].itemName
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[13].itemID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[13].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[14].itemName
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[14].itemID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[14].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[15].itemName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[15].itemID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[15].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[16].itemName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[16].itemID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[16].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[17].itemName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[17].itemID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[17].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[18].itemName
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[18].itemID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[18].itemType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[19].itemName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[19].itemID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460852, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
+      propertyPath: inventory.Array.data[19].itemType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05c07640df5a3f247b5d5055d1d1774e, type: 2}
@@ -2269,9 +2463,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Level
-
-    3'
+  m_Text: 
 --- !u!222 &1254443791
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2426,7 +2618,7 @@ GameObject:
   - 114: {fileID: 1359091669}
   - 114: {fileID: 1359091668}
   m_Layer: 5
-  m_Name: LiuLevelButton
+  m_Name: Level3Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2476,16 +2668,16 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 8cf71ba8d1cd2584c812517a01fce422,
+    m_HighlightedSprite: {fileID: 21300000, guid: 7048f6bfc0ea7da45abd282e974e1882,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 72fc9dc0c148c794ca980c6912173410, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: c79e73ba18498e646b4f99120de53557, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 7048f6bfc0ea7da45abd282e974e1882, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 7048f6bfc0ea7da45abd282e974e1882, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1359091669}
   m_OnClick:
     m_PersistentCalls:
@@ -2498,7 +2690,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level02
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

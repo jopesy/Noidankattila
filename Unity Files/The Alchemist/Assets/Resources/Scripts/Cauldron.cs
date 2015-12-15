@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class Cauldron : MonoBehaviour {
 
@@ -8,6 +12,7 @@ public class Cauldron : MonoBehaviour {
 	private Item potion;
 	private ItemDatabase database;
 	private Inventory inventory;
+	public List<Item> inventoryList;
 	public Transform potionCreatedSound;
 	private GameObject soundEffect;
 	public Transform cauldronBubblingSound;
@@ -22,6 +27,10 @@ public class Cauldron : MonoBehaviour {
 	private GameObject potionBookSuperJump;
 	private GameObject potionBookFireball;
 	public int potionBookSelectedPage;
+
+	public Text labelRed;
+	public Text labelGreen;
+	public Text labelBlue;
 
 	private GameObject playerModel;
 	private GameObject buttonOK;
@@ -39,6 +48,8 @@ public class Cauldron : MonoBehaviour {
 		potionIngredients = new List<Item> ();
 		playerModel = GameObject.FindGameObjectWithTag("PlayerModel");
 		potionBookSelectedPage = 1;
+		UpdateCountLabels ();
+		inventoryList = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory>().inventory;
 	}
 
 	// Hide "Potion created messages" and buttons at startup
@@ -137,6 +148,8 @@ public class Cauldron : MonoBehaviour {
 		//Play Cauldron bubbling sound
 		cauldronBubblingSoundEffect = Instantiate (cauldronBubblingSound).gameObject;
 		Destroy (cauldronBubblingSoundEffect, 2);
+		//Save inventory
+		Save();
 		//Wait for the animation to finish before showing the message
 		StartCoroutine ("WaitThreeSeconds");
 	}
@@ -211,7 +224,7 @@ public class Cauldron : MonoBehaviour {
 				} else { //going left
 					potionBookSelectedPage += pageNumber;
 				}
-			}else {
+			} else {
 				if (potionBookSelectedPage == 3) {
 					if (pageNumber > 0) { //going right
 						potionBookSelectedPage = 3;
@@ -221,9 +234,6 @@ public class Cauldron : MonoBehaviour {
 				}
 			}
 		}
-
-
-		print (potionBookSelectedPage);
 
 		//Close all windows currently open
 		HideMessages ();
@@ -244,5 +254,38 @@ public class Cauldron : MonoBehaviour {
 		HideMessages ();
 		infoPanel.gameObject.SetActive (true);
 		buttonOK.gameObject.SetActive (true);
+	}
+	public void UpdateCountLabels(){
+		
+		database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>();
+		inventory = GameObject.FindGameObjectWithTag ("Inventory").GetComponent<Inventory> ();
+		
+		int redMushrooms = 0;
+		int greenMushrooms = 0;
+		int blueMushrooms = 0;
+		
+		for (int i=0; i < inventory.inventory.Count; i++) {
+			if (inventory.inventory[i].itemID == 0) { // Red mushrooms 
+				redMushrooms += 1;
+			}
+			if (inventory.inventory[i].itemID == 1){
+				greenMushrooms += 1;
+			}
+			if (inventory.inventory[i].itemID == 2){
+				blueMushrooms += 1;
+			}
+		}
+		labelRed.text = redMushrooms.ToString();
+		labelGreen.text = greenMushrooms.ToString();
+		labelBlue.text = blueMushrooms.ToString();
+	}
+	//Saves player's inventory data to a file called "playerInfo.dat"
+	public void Save(){
+		BinaryFormatter bf = new BinaryFormatter ();
+		FileStream file = File.Create (Application.persistentDataPath + "/playerInfo.dat");
+		
+		bf.Serialize (file, inventoryList);
+		file.Close ();
+		print ("Inventory saved!");
 	}
 }

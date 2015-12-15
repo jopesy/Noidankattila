@@ -128,7 +128,6 @@ public class FinishLevel : MonoBehaviour {
 		//Load World Map
 		//gameManager.GetComponent<GameManager>().LoadLevel("WorldMap");
 	}
-	//Saves player's inventory data to a file called "playerInfo.dat"
 	public void SaveStars(){
 		List<int> stars = new List<int>();
 		stars.Insert (0, 0);

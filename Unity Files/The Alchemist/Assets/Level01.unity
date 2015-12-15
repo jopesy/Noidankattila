@@ -32121,9 +32121,36 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 132344, guid: a00320d0562a35f42ad59c537b374d48, type: 2}
+      propertyPath: m_TagString
+      value: ButtonSuperJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 190390, guid: a00320d0562a35f42ad59c537b374d48, type: 2}
+      propertyPath: m_TagString
+      value: ButtonHealingPotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 130188, guid: a00320d0562a35f42ad59c537b374d48, type: 2}
+      propertyPath: m_TagString
+      value: ButtonFireball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a00320d0562a35f42ad59c537b374d48, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1368409963 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 179482, guid: a00320d0562a35f42ad59c537b374d48, type: 2}
+  m_PrefabInternal: {fileID: 1368409962}
+--- !u!114 &1368409964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368409963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c267546d674172047852ac240b0fd897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1369308852
 Prefab:
   m_ObjectHideFlags: 0

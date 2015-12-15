@@ -48,6 +48,12 @@ TagManager:
   - PanelStar1
   - PanelStar2
   - PanelStar3
+  - TextRed
+  - TextGreen
+  - TextBlue
+  - ButtonHealingPotion
+  - ButtonSuperJump
+  - ButtonFireball
   layers:
   - Default
   - TransparentFX

@@ -59,8 +59,8 @@ public class Powerup : MonoBehaviour {
 			StartCoroutine("FireballEffectDuration");
 
 			//remove used potion from inventory
-			if (inventory.HasItem(5)){
-				inventory.RemoveItem(5);
+			if (inventory.HasItem(6)){
+				inventory.RemoveItem(6);
 			}
 		}
 	}

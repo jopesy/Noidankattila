@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9d869985e1313479f2c0f79a8165b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball: {fileID: 491280, guid: 0a1c0d907a45f274fa08d4a0250b920b, type: 2}
+  fireball: {fileID: 423070, guid: e822c3f0fb7f35d4e88ce6b19900f874, type: 2}
   canShoot: 0
 --- !u!136 &13661838
 CapsuleCollider:
@@ -1291,6 +1291,10 @@ Prefab:
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 433242, guid: 56ee0a987eb5ccc4782e5fc867092f49, type: 2}
+    - target: {fileID: 0}
+      propertyPath: fireball
+      value: 
+      objectReference: {fileID: 423070, guid: e822c3f0fb7f35d4e88ce6b19900f874, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102174}

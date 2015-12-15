@@ -79,6 +79,8 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 			inventory.RemoveItem(itemID); // remove dropped ingredient from inventory
 			startParent.GetComponent<Slot>().FillSlot ();
 
+			cauldron.UpdateCountLabels();
+
 			soundEffect = Instantiate (ingredientDroppedSound).gameObject;
 			Destroy (soundEffect, 3);
 		}
